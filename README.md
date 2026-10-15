@@ -115,8 +115,6 @@ Before pushing, confirm with `git status` that `.env`, `.env.local` and `.venv` 
 2. Add `GEMINI_API_KEY` (and optionally `GEMINI_MODEL`) under Environment Variables.
 3. Deploy, then open `/api/health` on the deployed URL to confirm the Python function responds.
 
-The Vercel deployment has not been tested by the author of this README. If something differs, check the current Vercel Python runtime docs (entry point `api/index.py`, an ASGI `app` object, root `requirements.txt`).
-
 ## Known free-tier limitations
 - Serverless time limits and cold starts; slow sites may time out.
 - Rate limiting is in-memory per instance, so it is best-effort only.
