@@ -3,10 +3,15 @@
 AI-assisted lead research for freelancers, developers and small agencies. Enter a company and website; the Python backend fetches the public homepage, extracts structured info, builds a preliminary profile and drafts an outreach email. **Core features work without any AI key.** Gemini is an optional, user-triggered enhancement. No database, no Docker, no paid services required.
 
 ## Screenshots
-_Placeholders: add captured images to `docs/` and link them here._
-- Dashboard: `docs/dashboard.png`
-- Research: `docs/research.png`
-- Prospects: `docs/prospects.png`
+
+### Dashboard
+![Dashboard](docs/Dashboard.png)
+
+### Research a Company
+![Research a Company](docs/Research.png)
+
+### Saved Prospects
+![Saved Prospects](docs/Prospect.png)
 
 ## Features
 | Feature | Needs AI key? |
@@ -59,7 +64,7 @@ npm run dev
 Open http://localhost:3000. Check the backend at http://localhost:8000/api/health.
 
 ## Environment variables
-Copy `.env.example` to `.env` (or `.env.local`) **in the project root**:
+Copy `.env.example` to `.env` (or `.env.local`) **in the project root**. The example file lists both variables; fill in your own values:
 ```
 GEMINI_API_KEY=your-key-here
 GEMINI_MODEL=your-model-name
